@@ -1,0 +1,23 @@
+.card-div {
+    background-color: var(--light-gray);
+    border-bottom: 0.5vh solid var(--secondary-color);
+    width: 20vw;
+    height: 20vw;
+    padding: 2vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+
+
+}
+
+.card-div h2 {
+    font-size: 1.5vw;
+}
+
+.car-div p {
+    color: var(--second-text-color);
+    font-size: 1.5vw;
+    
+}
+
