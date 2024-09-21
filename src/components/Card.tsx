@@ -10,7 +10,7 @@ interface ICardProps {
 export default function Card({ icon, title, text }: ICardProps) {
     return(
         <div className="card-div">
-            <img src="" alt="" />
+            <img src={icon} alt="" width={30} height={30}/>
             <h2>{title}</h2>
             <p></p>
             <br />

@@ -20,6 +20,7 @@
     --light-gray: #F8F8F8;
     --primary-color: #CE3126;
     --secondary-color: #3EA930;
+    --secondary-color-hover: #CE3126;
 
     --ff-sans: "Montserrat", system-ui, sans-serif;
     --fw-base: 400;
@@ -52,6 +53,7 @@ html {
 body {
     background-color: var(--bg-color);
     overflow-x: hidden;
+
 }
 
 h1, h2, h3 {

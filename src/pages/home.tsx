@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import Logo from "../assets/logo.svg";
 import Menu from "../assets/menu.svg";
 import Close from "../assets/close.svg";
+import Folders from "../assets/folders.svg"
+import Compass from "../assets/compass.svg"
+import Graphic from "../assets/graphic.svg"
 import "../styles/utility.css"
 import "../styles/header.css"
 import "../styles/hero.css"
@@ -18,8 +21,11 @@ export default function Home() {
     useEffect(() => {
         if (showMobileMenu) {
             //pegar o html e mudar o stye para overflow-y hidden
+            document.documentElement.style.overflowY = 'hidden';
+
         } else {
-            // pegar o html e remover o style para overflow-y hidden
+            document.documentElement.style.overflowY = '';
+
         }
         console.log('executou');
     }, [showMobileMenu])
@@ -101,13 +107,12 @@ export default function Home() {
 
                 <div className="container content">
 
-                    <p className="desktop-only">Olá</p>
+                    <p className="desktop-only">Assuma o controle total do seu rebanho com tecnologia de ponta</p>
 
                     <h1>
-                        Uma solução que irá te entregar X
+                        Uma solução completa para o gerenciamento do seu rebanho
                     </h1>
-                    <p>Você sabe que, para alcançar o sucesso, é fundamental
-                        ter parceiros que te impulsionem a ir mais longe.</p>
+                    <p>Com o parceiro certo, você pode levar a gestão do seu gado a um novo patamar de eficiência e produtividade.</p>
                     <div className="flex gap-1.5">
                         <span><Button text="Cadastre-se" /></span>
                         <span className="desktop-only">
@@ -121,20 +126,22 @@ export default function Home() {
             <section id="middle">
                 <div className="container content">
                     <p >Soluções</p>
-                    <h1>Sob Medida para você</h1>
-                    <p>Inovação é com a gente! A <span className="text-destaque">Gado Expert</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços</p>
+                    <h1>A ferramenta certa para potencializar sua gestão no campo</h1>
+                    <p>Inovação e eficiência para você cuidar do seu rebanho com mais inteligência e menos esforço. Veja como o <span className="text-destaque">Gado Expert</span> pode transformar a sua rotina.</p>
                 </div>
-                    <br />
-                <div  id="card-sect">
-                    <Card icon="A" title="Produto Vencedor" text="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles talta tal tal"/>
-                    <Card icon="A" title="Produto Vencedor" text="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles talta tal tal"/>
-                    <Card icon="A" title="Produto Vencedor" text="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles talta tal tal"/>
+                <br />
+                <div id="card-sect">
+                    <Card icon={Folders} title="Gestão Completa do Rebanho" text="Monitore cada detalhe do seu rebanho com facilidade. Controle o cadastro de animais, vacinas, pesagem e histórico de saúde, tudo em um só lugar." />
+                    <Card icon={Compass} title="Localização Precisa e Monitoramento" text="Nunca perca de vista o seu gado. Utilize a nossa ferramenta de geolocalização para saber exatamente onde cada animal está e monitorar a movimentação em tempo real." />
+                    <Card icon={Graphic} title="Relatórios e Análises Inteligentes" text="Tome decisões estratégicas com base em dados. Geração de relatórios detalhados sobre a produtividade, saúde e crescimento do seu rebanho, auxiliando no planejamento de longo prazo." />
                 </div>
             </section>
 
             <section className="container content">
-                
+
             </section>
+
         </>
+
     )
 }
