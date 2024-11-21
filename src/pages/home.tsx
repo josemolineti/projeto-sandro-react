@@ -12,6 +12,7 @@ import "../styles/middle.css"
 import "../styles/testemonials.css"
 import "../styles/pricing.css"
 import "../styles/contact.css"
+import "../styles/footer.css"
 import Button from "../components/Button";
 import HeroRectangleOne from "../assets/images/rectangleOne.png"
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
@@ -28,7 +29,7 @@ export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     const [mail, setMail] = useState("");
     const [message, setMessage] = useState("");
-    const token_google = 'eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NTczNjEyODM5MTIxMTIzNjczIiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJqZW1vbGluZXRpQG1pbmhhLmZhZy5lZHUuYnIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IndDdVJPRkRSQmdKeWRRQWItSE1kc0EiLCJuYmYiOjE3MzIxMzIwMzksImlhdCI6MTczMjEzMjMzOSwiZXhwIjoxNzMyMTM1OTM5LCJqdGkiOiJlNTgyYzgyYzMxYTdjNThiZGIwOWUwMDZjM2M3MGYzMGM4ZjE5NTFlIn0.Vu5vBxfefQPBBRzIa3BJitJlP1FKQkP6NwMFLUbkF2WoNCW_u_lyZzc_kQfBuZu6QLU1bND2posjZaVYDpCIvzIrMDysuZFheoDtB2utO06C292wWAXkCtqUyWwIWJrc0kFkNBPPOtOzsLFBrs1xxciEkwAmGohD80iFm6bbaZi8zjUtDwBlA5EYdWnyqWYtzrU5ieOTol9Vyj3gWKVKHeCwy1Y9sDrFVvaYLiHJ_C3SoRV4aKfJqebAnibeFNfw0XgmbO4yBI1ABURzDIZdRCxE9WQdRycXrJSfMQJVqrMZTy18lydRswh9tcu4T1bVTaRDPVKXbhTPkTz-N6740A';
+    const token_google = 'eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NTczNjEyODM5MTIxMTIzNjczIiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJqZW1vbGluZXRpQG1pbmhhLmZhZy5lZHUuYnIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkItUFdXNHJUelFNZUdONU04ZGJUVVEiLCJuYmYiOjE3MzIxNTczNzgsImlhdCI6MTczMjE1NzY3OCwiZXhwIjoxNzMyMTYxMjc4LCJqdGkiOiI1MWQ0ODY5MTI2MzJjNDcyYWViOGRkN2EwMWQ4ZTRhNTQ4MjNlNTg5In0.ngfJU9_GY3bRdmXUazbehJsHH9dPWk-fbSM0T3Or5AZnVfKVhVkg_-8PJpHtzemHe_m2qGHbeNABRFANX_XN3wsllkMr77YlT0X62vCrKUZRZQnPDuDWMoZHhLIGRBSus0B0cg5tFZMVFbvka4k4Y6KpXIY2nOavh6l5KK-3dqz_ceEhOR7Ce5HUlSwJjN63FKllxC2_ylc8124GnXv3J86Nrbzil0icuFFXo45B-acbgAmQlfxSJGYUjJ428raVA1G43yVVCOWJ6KmQ_yu-2X7dv2Wq7L-UPjcFMRL6UxLLtUGWknZ6Ore3jU3MFOTq5TuWXtYpi0h9es1OigXBzA';
 
     useEffect(() => {
         if (showMobileMenu) {
@@ -42,7 +43,7 @@ export default function Home() {
         console.log('executou');
     }, [showMobileMenu])
 
-    function func(){
+    function func() {
 
     }
 
@@ -60,19 +61,19 @@ export default function Home() {
                 message: message,
             })
         })
-        .then(response => {
-            if (response.status === 200) {
-                return response.json();
-            } else {
-                throw new Error('Falha ao enviar a requisição');
-            }
-        })
-        .then(data => {
-            console.log('Email enviado com sucesso:', data);
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-        });
+            .then(response => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+                    throw new Error('Falha ao enviar a requisição');
+                }
+            })
+            .then(data => {
+                console.log('Email enviado com sucesso:', data);
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+            });
     }
 
 
@@ -316,11 +317,37 @@ export default function Home() {
                         <label htmlFor="">Mensagem</label>
                         <textarea value={message} onChange={event => setMessage(event.target.value)} required></textarea>
                     </div>
-                    <Button text="testando" func={func} />
+                    <Button text="Enviar" func={func} />
                 </form>
             </section>
 
-
+            <footer className="footer-container">
+                <div className="footer-content container">
+                    <div className="footer-section">
+                        <img src={Logo} alt="Logo GadoExpert" className="footer-logo" />
+                        <p>Gerenciamento completo do seu rebanho com tecnologia de ponta.</p>
+                    </div>
+                    <div className="footer-section">
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#solution">Soluções</a></li>
+                            <li><a href="#testimonials">Depoimentos</a></li>
+                            <li><a href="#pricing">Preços</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div className="footer-section">
+                        <h4>Contato</h4>
+                        <p>Email: suporte@gadoexpert.com</p>
+                        <p>Telefone: (45) 99999-9999</p>
+                        <p>Endereço: Av. das Torres, 123 - Cascavel, PR</p>
+                    </div>
+                </div>
+                <div className="footer-bottom">
+                    <p>&copy; 2024 GadoExpert. Todos os direitos reservados.</p>
+                </div>
+            </footer>
 
 
 

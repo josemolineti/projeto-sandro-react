@@ -17,7 +17,10 @@
 #contact form {
     width: 80%;
     align-self: center;
-    
+    display: grid; 
+    gap: 3vw; 
+    display: flex;
+    flex-direction: column;
 }
 
 #contact form dev {
@@ -30,4 +33,38 @@
     flex: 1;
     
     
+}
+
+#contact .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#contact label {
+    font-weight: bold;
+    color: #555;
+}
+
+
+#contact input[type="email"],
+#contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea */
+#contact textarea {
+    resize: none;
+    height: 150px;
 }
